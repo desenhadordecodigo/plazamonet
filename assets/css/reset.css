@@ -1,0 +1,21 @@
+/*
+##########
+Fonte: CSS Raiz
+URL: www.cssraiz.com.br
+GitHub User: cssraiz
+##########
+*/
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--poppins-regular, sans-serif);
+    font-size: 100%;
+    height: 100%;
+}

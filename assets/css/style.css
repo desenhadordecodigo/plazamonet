@@ -1,0 +1,181 @@
+.anime-transition{
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.wrapper{
+    max-width: 100%;
+    width: 100vw;
+}
+.center{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100vw;
+}
+.banner{
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0 1.6rem;
+    width: 100vw;
+}
+.banner > header,
+.banner > footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1.4rem 0;
+}
+.banner > header img{
+    max-width: 200px;
+    width: 100vw;
+}
+.banner > .infos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100vw;
+}
+.banner > .infos > header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner > .infos > header h1{
+    align-items: center;
+    color: var(--grey-clear);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--poppins-bold);
+    font-size: 5rem;
+    font-weight: normal;
+    justify-content: center;
+    line-height: 6rem;
+    text-align: center;
+}
+.banner > .infos > header h1::after{
+    background-color: var(--orange);
+    content: "";
+    height: 100vh;
+    margin: 2rem 0;
+    max-height: 3px;
+    max-width: 100px;
+    width: 100vw;
+}
+.banner > .infos > header p{
+    color: var(--grey-clear);
+    font-size: 1rem;
+    text-align: center;
+}
+.bt-agendamento{
+    background-color: var(--grey);
+    border-radius: .2rem;
+    border-bottom: 4px solid var(--orange);
+    color: var(--grey-clear);
+    font-size: .8rem;
+    letter-spacing: .08rem;
+    margin-top: 2rem;
+    padding: .8rem 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.bt-agendamento:hover{
+    background-color: var(--orange);
+}
+.icon-scroll {
+    align-items: center;
+    -webkit-box-shadow: inset 0 0 0 1px var(--grey-clear);
+    box-shadow: inset 0 0 0 1px var(--grey-clear);
+    border-radius: 25px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    opacity: .7;
+    position: relative;
+    width: 24px;
+}
+.icon-scroll::before{
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    background: var(--grey-clear);
+    border-radius: 4px;
+    content: "";
+    height: 6px;
+    position: absolute;
+    top: 8px;
+    width: 6px;
+}
+@-webkit-keyframes scroll {
+    0% {
+        opacity:1
+    }
+    to {
+        opacity:0;
+        -webkit-transform:translateY(23px);
+        transform:translateY(23px)
+    }
+}
+@keyframes scroll {
+    0% {
+        opacity:1
+    }
+    to {
+        opacity:0;
+        -webkit-transform:translateY(23px);
+        transform:translateY(23px)
+    }
+}
+@media screen and (max-width: 1100px){
+    .center{
+        max-width: 100%;
+    }
+    .banner > .infos > header h1{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .banner > .infos{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 660px){
+    .banner > .infos > header h1{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .banner{
+        height: auto;
+        max-height: inherit;
+    }
+    .banner > .infos > header h1{
+        font-size: 2.1rem;
+        line-height: 3rem;
+    }
+}
+@media screen and (max-height: 400px){
+    .banner{
+        height: auto;
+        max-height: inherit;
+    }
+}

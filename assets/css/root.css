@@ -1,0 +1,36 @@
+/*
+##########
+Fonte: CSS Raiz
+URL: www.cssraiz.com.br
+GitHub User: cssraiz
+##########
+*/
+:root{
+    /* 
+        Font Family Poppins
+        Example: font-family: var(--poppins-VARIANT, sans-serif);
+    */
+    --poppins-italic: 'Poppins Italic';
+    --poppins-thin: 'Poppins Thin';
+    --poppins-thin-italic: 'Poppins Thin Italic';
+    --poppins-extra-light: 'Poppins Extra Light';
+    --poppins-extra-light-italic: 'Poppins Extra Light Italic';
+    --poppins-light: 'Poppins Light';
+    --poppins-light-italic: 'Poppins Light Italic';
+    --poppins-regular: 'Poppins Regular';
+    --poppins-medium: 'Poppins Medium';
+    --poppins-medium-italic: 'Poppins Medium Italic';
+    --poppins-semi-bold: 'Poppins Semi Bold';
+    --poppins-semi-bold-italic: 'Poppins Semi Bold Italic';
+    --poppins-bold: 'Poppins Bold';
+    --poppins-bold-italic: 'Poppins Bold Italic';
+    --poppins-extra-bold: 'Poppins Extra Bold';
+    --poppins-extra-bold-italic: 'Poppins Extra Bold Italic';
+    --poppins-black: 'Poppins Black';
+    --poppins-black-italic: 'Poppins Black Italic';
+
+    /* Color Pallet */
+    --orange: hsla(19, 98%, 44%, 1);
+    --grey: hsla(0, 0%, 15%, 1);
+    --grey-clear: hsla(0, 0%, 99%, 1);
+}
